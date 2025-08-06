@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.post-page {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 50px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.post-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 10px;
+  color: #111;
+}
+
+.post-author {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.secret-key-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+.input-secret {
+  padding: 14px 18px;
+  width: 260px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-secret:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 8px #3b82f6aa;
+}
+
+.edit-controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-input,
+.form-textarea {
+  margin-top: 8px;
+  padding: 15px 18px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1.8px solid #ddd;
+  resize: none;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 10px #3b82f6aa;
+}
+
+.form-textarea {
+  min-height: 140px;
+  line-height: 1.6;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.post-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.post-image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  object-fit: cover;
+}
+
+.upvote-section {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #2563eb;
+}
+
+.upvote-count {
+  user-select: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+  user-select: none;
+  box-shadow: 0 7px 20px rgb(0 0 0 / 0.1);
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: #fff;
+  box-shadow: 0 9px 22px #3b82f6aa;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  box-shadow: 0 12px 26px #2563ebcc;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: #fff;
+  box-shadow: 0 9px 22px #6b7280aa;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+  box-shadow: 0 12px 26px #4b5563cc;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: #fff;
+  box-shadow: 0 9px 22px #ef4444aa;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+  box-shadow: 0 12px 26px #b91c1ccc;
+}
+
+.btn-upvote {
+  background-color: #16a34a;
+  color: #fff;
+  padding: 10px 22px;
+  font-weight: 800;
+  border-radius: 24px;
+  box-shadow: 0 9px 22px #16a34aaa;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+  font-size: 1rem;
+}
+
+.btn-upvote:hover {
+  background-color: #15803d;
+  box-shadow: 0 12px 26px #15803dcc;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  color: #a1a1aa;
+}
+.comment-section {
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .comment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment {
+    background: #f1f5f9;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .comment p {
+    margin-bottom: 6px;
+  }
+  
+  .comment small {
+    color: #555;
+    font-size: 0.85rem;
+  }
+  
